@@ -1,5 +1,3 @@
 # C0771612_W2020_MAD3125_FP
-## Final Project - Bills Register
-### Shree Marella
-
+## Shree Marella - Bills Register
 **References :**
