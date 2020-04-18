@@ -53,35 +53,35 @@ public class LoginActivity extends AppCompatActivity
                         editor.putString("password",password);
                         editor.apply();
 
-                        //Intent intent = new Intent(LoginActivity.this, .class);
-                        //startActivity(intent);
+                        Intent intent = new Intent(LoginActivity.this, .class);
+                        startActivity(intent);
                     }else {
                         editor.clear();
                         editor.apply();
 
-                        //Intent intent = new Intent(LoginActivity.this, .class);
-                        //startActivity(intent);
+                        Intent intent = new Intent(LoginActivity.this, .class);
+                        startActivity(intent);
                     }
                 }
-                else {
+//                else {
 //                    AlertDialog.Builder alert = new AlertDialog.Builder(LoginActivity.this);
 //                    alert.setCancelable(false);
 //                    alert.setTitle("Login Error");
 //                    alert.setMessage("Invalid User ID or Password");
-                    alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-                    AlertDialog aDialog = alert.create();
-                    aDialog.show();
+//                    alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.dismiss();
+//                        }
+//                    });
+//                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.cancel();
+//                        }
+//                    });
+//                    AlertDialog aDialog = alert.create();
+//                    aDialog.show();
                 }
             }
         });
