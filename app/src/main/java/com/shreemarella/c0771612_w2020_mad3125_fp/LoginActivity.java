@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity
 
         SharedPreferences sharedPreferences = getSharedPreferences("login",MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedPreferences.edit();
-        Email.setText(sharedPreferences.getString("email",null);
+        Email.setText(sharedPreferences.getString("email",null));
         Password.setText(sharedPreferences.getString("password",null));
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -53,13 +53,13 @@ public class LoginActivity extends AppCompatActivity
                         editor.putString("password",password);
                         editor.apply();
 
-                        Intent intent = new Intent(LoginActivity.this, .class);
+                        Intent intent = new Intent(LoginActivity.this, customers_list.class);
                         startActivity(intent);
                     }else {
                         editor.clear();
                         editor.apply();
 
-                        Intent intent = new Intent(LoginActivity.this, .class);
+                        Intent intent = new Intent(LoginActivity.this, customers_list.class);
                         startActivity(intent);
                     }
                 }

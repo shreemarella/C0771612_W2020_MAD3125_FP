@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="210dp"
         android:layout_height="86dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="36dp"
         android:text="Bills Register"
         android:textAlignment="center"
         android:textSize="30sp"
@@ -25,13 +25,14 @@
         android:id="@+id/textView2"
         android:layout_width="220dp"
         android:layout_height="45dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="68dp"
         android:text="Shree Marella"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -49,8 +50,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="388dp"
-        android:layout_height="368dp"
+        android:layout_width="361dp"
+        android:layout_height="313dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
