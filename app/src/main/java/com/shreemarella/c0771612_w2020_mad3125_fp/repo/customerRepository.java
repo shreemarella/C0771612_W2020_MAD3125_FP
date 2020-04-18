@@ -32,7 +32,11 @@ public class customerRepository
                 InternetBill I1 = new InternetBill("INT001","03/08/2001","INTERNET",456.78,"Rogers","256.78");
                 customer customer1 = new customer("C0001","Shree","Marella","Shree@gmail.com");
                 customer customer2 = new customer("C0002","Shreya","Vaghasia","Shreya@gmail.com");
-                
+                customer customer3 = new customer("C0003","Gagandeep","Kaur","Gagn@gmail.com");
+                customer1.addBill("HYD",H1);
+                customer1.addBill("MOB",M1);
+                customer1.addBill("INT",I1);
+
 
             }
 }
