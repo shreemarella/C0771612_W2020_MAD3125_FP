@@ -5,9 +5,9 @@ public class Bill
     private String billId;
     private String billDate;
     private String billType;
-    private String totalBillAmount;
+    private Double totalBillAmount;
 
-    public Bill(String billId, String billDate, String billType, String totalBillAmount) {
+    public Bill(String billId, String billDate, String billType, Double totalBillAmount) {
         this.billId = billId;
         this.billDate = billDate;
         this.billType = billType;
@@ -39,11 +39,11 @@ public class Bill
         this.billType = billType;
     }
 
-    public double getTotalBillAmount() {
+    public Double getTotalBillAmount() {
         return totalBillAmount;
     }
 
-    public void setTotalBillAmount(String totalBillAmount) {
+    public void setTotalBillAmount(Double totalBillAmount) {
         this.totalBillAmount = totalBillAmount;
     }
 }
