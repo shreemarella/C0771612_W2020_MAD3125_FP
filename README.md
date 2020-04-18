@@ -6,6 +6,7 @@
 * https://developer.android.com/reference/java/util/HashMap
 * https://abhiandroid.com/java/hashmap
 * https://android.jlelse.eu/easily-adding-nested-recycler-view-in-android-a7e9f7f04047
+* https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example
 
 
 
