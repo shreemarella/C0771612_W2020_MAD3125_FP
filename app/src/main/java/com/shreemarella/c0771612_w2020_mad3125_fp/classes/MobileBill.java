@@ -16,4 +16,44 @@ public class MobileBill extends Bill implements IDisplay
         this.internetGBused = internetGBused;
         this.minutesUsed = minutesUsed;
     }
+
+    public String getMobileManufacturer() {
+        return mobileManufacturer;
+    }
+
+    public void setMobileManufacturer(String mobileManufacturer) {
+        this.mobileManufacturer = mobileManufacturer;
+    }
+
+    public String getPlanName() {
+        return planName;
+    }
+
+    public void setPlanName(String planName) {
+        this.planName = planName;
+    }
+
+    public String getMobileNo() {
+        return mobileNo;
+    }
+
+    public void setMobileNo(String mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public int getInternetGBused() {
+        return internetGBused;
+    }
+
+    public void setInternetGBused(int internetGBused) {
+        this.internetGBused = internetGBused;
+    }
+
+    public int getMinutesUsed() {
+        return minutesUsed;
+    }
+
+    public void setMinutesUsed(int minutesUsed) {
+        this.minutesUsed = minutesUsed;
+    }
 }
