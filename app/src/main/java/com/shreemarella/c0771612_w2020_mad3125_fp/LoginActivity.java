@@ -63,25 +63,25 @@ public class LoginActivity extends AppCompatActivity
                         startActivity(intent);
                     }
                 }
-//                else {
-//                    AlertDialog.Builder alert = new AlertDialog.Builder(LoginActivity.this);
-//                    alert.setCancelable(false);
-//                    alert.setTitle("Login Error");
-//                    alert.setMessage("Invalid User ID or Password");
-//                    alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            dialog.dismiss();
-//                        }
-//                    });
-//                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            dialog.cancel();
-//                        }
-//                    });
-//                    AlertDialog aDialog = alert.create();
-//                    aDialog.show();
+                else {
+                    AlertDialog.Builder alert = new AlertDialog.Builder(LoginActivity.this);
+                    alert.setCancelable(false);
+                    alert.setTitle("Login Error");
+                    alert.setMessage("Invalid User ID or Password");
+                    alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    AlertDialog aDialog = alert.create();
+                    aDialog.show();
                 }
             }
         });
