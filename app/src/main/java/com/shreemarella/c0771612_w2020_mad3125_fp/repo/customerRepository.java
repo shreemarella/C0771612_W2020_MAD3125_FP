@@ -31,7 +31,8 @@ public class customerRepository
                 MobileBill M1 = new MobileBill("MOB001","10/12/1998","MOBILE",325.89,"Apple INC","2.5Gb and Unlimited calls","+18199210696",25,890);
                 InternetBill I1 = new InternetBill("INT001","03/08/2001","INTERNET",456.78,"Rogers","256.78");
                 customer customer1 = new customer("C0001","Shree","Marella","Shree@gmail.com");
-//                customer customer2 = new customer()
+                customer customer2 = new customer("C0002","Shreya","Vaghasia","Shreya@gmail.com");
+                
 
             }
 }
