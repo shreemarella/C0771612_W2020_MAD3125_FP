@@ -41,6 +41,7 @@ public class customerRepository
                 customer1.addBill("INT",I1);
                 customer2.addBill("HYD",H2);
                 customer2.addBill("INT",I2);
+                customer3.addBill("HYD",H3);
 
 
             }
