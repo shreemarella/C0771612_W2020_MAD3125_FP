@@ -56,4 +56,9 @@ public class MobileBill extends Bill implements IDisplay
     public void setMinutesUsed(int minutesUsed) {
         this.minutesUsed = minutesUsed;
     }
+
+    @Override
+    public void print() {
+
+    }
 }
