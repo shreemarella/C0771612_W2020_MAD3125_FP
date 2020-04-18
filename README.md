@@ -3,7 +3,7 @@
 **References :**
 
 * https://uxdesign.cc/building-the-perfect-splash-screen-46e080395f06
-
 * https://developer.android.com/reference/java/util/HashMap
+* https://abhiandroid.com/java/hashmap
 
 
