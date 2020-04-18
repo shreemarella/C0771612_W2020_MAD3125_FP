@@ -42,7 +42,13 @@ public class customerRepository
                 customer2.addBill("HYD",H2);
                 customer2.addBill("INT",I2);
                 customer3.addBill("HYD",H3);
+                customers.add(customer1);
+                customers.add(customer2);
+                customers.add(customer3);
+            }
 
-
+            public void addcustomer(customer customer)
+            {
+                customers.add(customer);
             }
 }
