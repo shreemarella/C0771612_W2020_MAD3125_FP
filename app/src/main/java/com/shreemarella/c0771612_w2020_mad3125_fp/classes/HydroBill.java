@@ -11,5 +11,24 @@ public class HydroBill extends Bill implements IDisplay
         this.unitsConsumed = unitsConsumed;
     }
 
-    
+    public String getAgencyName() {
+        return agencyName;
+    }
+
+    public void setAgencyName(String agencyName) {
+        this.agencyName = agencyName;
+    }
+
+    public String getUnitsConsumed() {
+        return unitsConsumed;
+    }
+
+    public void setUnitsConsumed(String unitsConsumed) {
+        this.unitsConsumed = unitsConsumed;
+    }
+
+    @Override
+    public void print() {
+
+    }
 }
