@@ -1,8 +1,10 @@
-package com.shreemarella.c0771612_w2020_mad3125_fp;
+package com.shreemarella.c0771612_w2020_mad3125_fp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 
 public class customers_list extends AppCompatActivity {
 

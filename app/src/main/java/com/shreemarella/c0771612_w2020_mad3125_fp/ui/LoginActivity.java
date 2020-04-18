@@ -1,4 +1,4 @@
-package com.shreemarella.c0771612_w2020_mad3125_fp;
+package com.shreemarella.c0771612_w2020_mad3125_fp.ui;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
+
+import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 
 public class LoginActivity extends AppCompatActivity
 {
