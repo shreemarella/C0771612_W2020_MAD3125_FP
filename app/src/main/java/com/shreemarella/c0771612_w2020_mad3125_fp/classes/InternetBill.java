@@ -11,7 +11,21 @@ public class InternetBill extends Bill implements IDisplay
         this.internetGBused = internetGBused;
     }
 
-    
+    public String getProviderName() {
+        return providerName;
+    }
+
+    public void setProviderName(String providerName) {
+        this.providerName = providerName;
+    }
+
+    public String getInternetGBused() {
+        return internetGBused;
+    }
+
+    public void setInternetGBused(String internetGBused) {
+        this.internetGBused = internetGBused;
+    }
 
     @Override
     public void print() {
