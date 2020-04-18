@@ -3,6 +3,8 @@ package com.shreemarella.c0771612_w2020_mad3125_fp.classes;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -77,6 +79,15 @@ public class customer implements Parcelable
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
+
+    public Double getAllTotal() {
+        return allTotal;
+    }
+
+    public void setAllTotal(Double allTotal) {
+        this.allTotal = allTotal;
+    }
+
     public void addBill(String billId, Bill bill)
     {
         this.customerBills.put(billId, bill);
@@ -89,6 +100,12 @@ public class customer implements Parcelable
     public void setCustomerBills(HashMap<String, Bill> customerBills) {
         this.customerBills = customerBills;
     }
+    public ArrayList<Bill> getBills()
+    {
+        Collection<Bill> demoValues = customerBills.values();
+        ArrayList<Bill> billsList = new ArrayList<>(demoValues);
+        return billsList;
+    }
 
 
 
@@ -98,6 +115,37 @@ public class customer implements Parcelable
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int flags) {
+    public void writeToParcel(Parcel dest, int flags)
+    {
+        dest.writeString(customerId);
+        dest.writeString(firstName);
+        dest.writeString(lastName);
+        dest.writeString(emailId);
+        dest.writeMap(customerBills);
+        if (allTotal == null) {
+            dest.writeByte((byte) 0);
+        } else {
+            dest.writeByte((byte) 1);
+            dest.writeDouble(allTotal);
+        }
+    }
+    public String getFullName()
+    {
+        fullName=firstName+" "+lastName;
+        return fullName;
+    }
+
+    public void setFullName(String fullName)
+    {
+        this.fullName = fullName;
+    }
+    public double getTotalAmount()
+    {
+        double allTotal2 = 0.0d;
+        for(Bill b : customerBills.values())
+        {
+            allTotal2 += b.getTotalBillAmount();
+        }
+        return allTotal2;
     }
 }

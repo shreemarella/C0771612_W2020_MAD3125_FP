@@ -39,7 +39,7 @@ public class Bill
         this.billType = billType;
     }
 
-    public String getTotalBillAmount() {
+    public double getTotalBillAmount() {
         return totalBillAmount;
     }
 
