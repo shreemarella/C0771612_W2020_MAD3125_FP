@@ -1,6 +1,7 @@
 package com.shreemarella.c0771612_w2020_mad3125_fp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -44,6 +45,11 @@ public class Customer_screen extends AppCompatActivity
 
     private void customersInfo()
     {
-        
+        Billsadapter= new billsadapter(this.billsArray);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        rvBills.setLayoutManager(mLayoutManager);
+        rvBills.setAdapter((RecyclerView.Adapter) Billsadapter);
+
     }
+    
 }
