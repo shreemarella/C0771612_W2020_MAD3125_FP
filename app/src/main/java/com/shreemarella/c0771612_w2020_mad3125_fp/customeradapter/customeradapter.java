@@ -32,25 +32,25 @@ public class customeradapter extends RecyclerView.Adapter<customeradapter.custom
             @Override
             public void onClick(View v) {
                 customer cust = customerRepository.getInstance().getCustomers().get(position);
-              //Intent sint = new Intent(holder.itemView.getContext(), Customer_screen.class);
+              Intent sint = new Intent(holder.itemView.getContext(), Customer_screen.class);
                 sint.putExtra("customers", cust);
                 holder.itemView.getContext().startActivity(sint);
             }
         });
     }
 
-//    @Override
-//    public int getItemCount() {
-//        return customerRepository.getInstance().getCustomers().size();
-//    }
-//
-//    public class customerviewholder extends RecyclerView.ViewHolder {
-//        TextView txtCustomerName;
-//
-//        public customerviewholder(@NonNull View itemView) {
-//            super(itemView);
-//
-//            //txtCustomerName = itemView.findViewById(R.id.image_name);
-//        }
-//    }
+    @Override
+    public int getItemCount() {
+        return customerRepository.getInstance().getCustomers().size();
+    }
+
+    public class customerviewholder extends RecyclerView.ViewHolder {
+        TextView txtCustomerName;
+
+        public customerviewholder(@NonNull View itemView) {
+            super(itemView);
+
+            txtCustomerName = itemView.findViewById(R.id.image_name);
+        }
+    }
 }
