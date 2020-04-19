@@ -51,5 +51,5 @@ public class Customer_screen extends AppCompatActivity
         rvBills.setAdapter((RecyclerView.Adapter) Billsadapter);
 
     }
-    
+
 }

@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
 import com.shreemarella.c0771612_w2020_mad3125_fp.repo.customerRepository;
+import com.shreemarella.c0771612_w2020_mad3125_fp.ui.Customer_screen;
 
 public class customeradapter extends RecyclerView.Adapter<customeradapter.customerviewholder>
 {
