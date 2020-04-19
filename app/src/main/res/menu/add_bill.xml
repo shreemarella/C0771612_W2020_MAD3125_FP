@@ -3,6 +3,10 @@
     <item
         android:id="@+id/menu3"
         android:title="Add New Hydro Bill" />
-   
+    <item
+        android:id="@+id/menu4"
+        android:title="Add New Mobile Bill" />
+    
+
 
 </menu>
