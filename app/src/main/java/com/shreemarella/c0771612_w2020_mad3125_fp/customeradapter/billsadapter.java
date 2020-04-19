@@ -50,22 +50,22 @@ public class billsadapter extends RecyclerView.Adapter<billsadapter.ViewHolder>
 
     }
 
-//    public class ViewHolder extends RecyclerView.ViewHolder {
-//
-//        TextView txtCellBillId;
-//        TextView txtCellBillDate;
-//        TextView txtCellBillType;
-//        TextView txtCellBillAmount;
-//        public ViewHolder(@NonNull View itemView) {
-//            super(itemView);
-//            txtCellBillId = itemView.findViewById(R.id.lblCellId);
-//            txtCellBillDate = itemView.findViewById(R.id.txtCellBillDate);
-//            txtCellBillType = itemView.findViewById(R.id.txtCellBillType);
-//            txtCellBillAmount = itemView.findViewById(R.id.txtCellBillAmount);
-//
-//        }
-//
-//    }
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+        TextView txtCellBillId;
+        TextView txtCellBillDate;
+        TextView txtCellBillType;
+        TextView txtCellBillAmount;
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            txtCellBillId = itemView.findViewById(R.id.lblCellId);
+            txtCellBillDate = itemView.findViewById(R.id.txtCellBillDate);
+            txtCellBillType = itemView.findViewById(R.id.txtCellBillType);
+            txtCellBillAmount = itemView.findViewById(R.id.txtCellBillAmount);
+
+        }
+
+    }
 
 
 }
