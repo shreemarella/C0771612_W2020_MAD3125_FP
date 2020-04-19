@@ -23,5 +23,34 @@ public class customeradapter extends RecyclerView.Adapter<customeradapter.custom
         return mCustomerViewHolder;
     }
 
+    @Override
+    public void onBindViewHolder(@NonNull final customeradapter.customerviewholder holder, final int position) {
+        customer mCustomer = customerRepository.getInstance().getCustomers().get(position);
+        holder.txtCustomerName.setText(mCustomer.getFullName());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customer cust = customerRepository.getInstance().getCustomers().get(position);
+              //Intent sint = new Intent(holder.itemView.getContext(), Customer_screen.class);
+                sint.putExtra("customers", cust);
+                holder.itemView.getContext().startActivity(sint);
+            }
+        });
+    }
+
+//    @Override
+//    public int getItemCount() {
+//        return customerRepository.getInstance().getCustomers().size();
+//    }
+//
+//    public class customerviewholder extends RecyclerView.ViewHolder {
+//        TextView txtCustomerName;
+//
+//        public customerviewholder(@NonNull View itemView) {
+//            super(itemView);
+//
+//            //txtCustomerName = itemView.findViewById(R.id.image_name);
+//        }
+//    }
 }
