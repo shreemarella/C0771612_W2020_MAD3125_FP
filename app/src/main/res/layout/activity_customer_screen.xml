@@ -137,7 +137,7 @@
                             android:layout_marginRight="10dp"
                             android:layout_weight="1"
                             android:background="#DFA857"
-                            android:hint="Customer emailId"
+                            android:hint="Customer EmailId"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="18sp">
