@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
+import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
 import com.shreemarella.c0771612_w2020_mad3125_fp.customeradapter.billsadapter;
 
 import java.util.ArrayList;
@@ -30,5 +31,19 @@ public class Customer_screen extends AppCompatActivity
         Email = findViewById(R.id.txtCustomerEmail);
         TotalAmountToPay = findViewById(R.id.txtCustomerTotalAmount);
         rvBills=findViewById(R.id.rvbills);
+
+        customer tobj = (customer) getIntent().getParcelableExtra("customers");
+
+        billsArray= tobj.getBills();
+
+        CustomerId.setText(tobj.getCustomerId());
+        FullName.setText(tobj.getFullName());
+        Email.setText(tobj.getEmailId());
+        customersInfo();
+    }
+
+    private void customersInfo()
+    {
+        
     }
 }
