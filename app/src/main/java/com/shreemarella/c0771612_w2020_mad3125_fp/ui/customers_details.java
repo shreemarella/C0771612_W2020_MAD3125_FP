@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
+import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
+import com.shreemarella.c0771612_w2020_mad3125_fp.repo.customerRepository;
 
 public class customers_details extends AppCompatActivity
 {
@@ -44,6 +46,36 @@ public class customers_details extends AppCompatActivity
                     edtLastName.setError("Enter Last Name");
                 } else if(cEmail.isEmpty()){
                     edtCEmail.setError("Enter email");
+                }else if(edtCEmail.getText().toString().matches("[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"))
+                {
+                    customer tempObj = new customer(edtCustomerID.getText().toString(),edtFirstName.getText().toString(),edtLastName.getText().toString(),edtCEmail.getText().toString());
+                    customerRepository.getInstance().addcustomer(tempObj);
+                    finish();
+
+//                } else if()  {
+//                    AlertDialog.Builder alert = new AlertDialog.Builder(details_customers.this);
+//                    alert.setCancelable(false);
+//                    alert.setTitle("New Customer Creation Error");
+//                    alert.setMessage("Invalid Email");
+//                    alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.dismiss();
+//                        }
+//                    });
+//                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.cancel();
+//                        }
+//                    });
+//                    AlertDialog aDialog = alert.create();
+//                    aDialog.show();
+                } else  {
+                    edtCEmail.setError("enter Valid email!");
                 }
+
+            }
+        });
     }
 }
