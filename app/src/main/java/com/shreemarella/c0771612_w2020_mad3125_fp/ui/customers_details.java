@@ -6,8 +6,7 @@ import android.os.Bundle;
 
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 
-public class
-customers_details extends AppCompatActivity {
+public class customers_details extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
