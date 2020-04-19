@@ -45,6 +45,7 @@ public class Customer_screen extends AppCompatActivity
 
     private void customersInfo()
     {
+
         Billsadapter= new billsadapter(this.billsArray);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvBills.setLayoutManager(mLayoutManager);
