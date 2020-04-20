@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 public abstract  class Bill implements IDisplay, Serializable
 {
-    private String billId;
-    private String billDate;
-    private String billType;
-    private Double totalBillAmount;
+     String billId;
+     String billDate;
+     String billType;
+     Double totalBillAmount=0.0;
 
     public Bill(String billId, String billDate, String billType, Double totalBillAmount) {
         this.billId = billId;
@@ -15,6 +15,11 @@ public abstract  class Bill implements IDisplay, Serializable
         this.billType = billType;
         this.totalBillAmount = totalBillAmount;
 
+    }
+    public Double billCalculate()
+    {
+        double dummyAmount = 0.0;
+        return dummyAmount;
     }
 
     public String getBillId() {

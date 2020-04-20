@@ -15,7 +15,7 @@ public class customer implements Parcelable
     private String lastName;
     private String fullName;
     private String emailId;
-    private HashMap<String, Bill> customerBills = new HashMap<>();
+    private HashMap<String, Bill> customerBills = new HashMap<String, Bill>();
     private Double allTotal;
 
     public customer(String customerId, String firstName, String lastName, String emailId) {
