@@ -10,6 +10,7 @@
 * https://www.vogella.com/tutorials/AndroidParcelable/article.html
 * https://stackoverflow.com/questions/36302764/when-is-adapter-null-in-recyclerview
 * https://javatpoint.com/android-option-menu-example
+* https://stackoverflow.com/questions/49906748/recyclerview-attempt-to-invoke-virtual-method-on-a-null-object-reference
 * https://stackoverflow.com/questions/38060002/how-to-hide-show-textview-from-java
 * https://stackoverflow.com/questions/12465115/how-to-make-a-date-spinner-on-android
 
