@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.google.android.material.textfield.TextInputEditText;
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
+import com.shreemarella.c0771612_w2020_mad3125_fp.repo.StringExtension;
 import com.shreemarella.c0771612_w2020_mad3125_fp.repo.customerRepository;
 
 public class customers_details extends AppCompatActivity
@@ -46,7 +47,7 @@ public class customers_details extends AppCompatActivity
                     edtLastName.setError("Enter Last Name");
                 } else if(cEmail.isEmpty()){
                     edtCEmail.setError("Enter email");
-                }else if(edtCEmail.getText().toString().matches("[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"))
+                }else if((StringExtension.emailValidation(edtCEmail.getText().toString())) == true)
                 {
                     customer tempObj = new customer(edtCustomerID.getText().toString(),edtFirstName.getText().toString(),edtLastName.getText().toString(),edtCEmail.getText().toString());
                     customerRepository.getInstance().addcustomer(tempObj);
@@ -72,7 +73,7 @@ public class customers_details extends AppCompatActivity
 //                    AlertDialog aDialog = alert.create();
 //                    aDialog.show();
                 } else  {
-                    edtCEmail.setError("enter Valid email!");
+                    edtCEmail.setError("enter Valid email");
                 }
 
             }

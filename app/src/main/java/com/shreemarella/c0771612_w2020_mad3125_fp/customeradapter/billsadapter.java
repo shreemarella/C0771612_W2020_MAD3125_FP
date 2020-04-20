@@ -57,6 +57,7 @@ public class billsadapter extends RecyclerView.Adapter<billsadapter.ViewHolder>
         });
 
 
+
     }
     @Override
     public int getItemCount()  {

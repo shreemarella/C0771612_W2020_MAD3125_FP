@@ -61,7 +61,7 @@ public class MobileBill extends Bill implements IDisplay
     @Override
     public Double billCalculate(){
         double totalBillAmount = 0.0;
-        totalBillAmount = (this.internetGBused ) * 25 + (this.minutesUsed) * 0.2;
+        totalBillAmount = (this.internetGBused ) * 20 + (this.minutesUsed) * 0.5;
         return totalBillAmount;
     }
 

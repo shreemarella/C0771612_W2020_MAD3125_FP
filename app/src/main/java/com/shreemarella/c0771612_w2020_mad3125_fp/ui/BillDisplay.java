@@ -37,7 +37,7 @@ public class BillDisplay extends AppCompatActivity
 
             HydroBill hbillObj = (HydroBill) mIntent.getSerializableExtra("billOBJ");
 
-            billtext.setText("Bill ID    :   "+hbillObj.getBillId()+"\nBill Date    :   "+hbillObj.getBillDate()+"\nBill Type  :   "+hbillObj.getBillType()+"\nAgency Name    :   "+hbillObj.getAgencyname()+"\nUnits Consumed   :    "+hbillObj.getUnitsconsumed()+"\nBill Amount   :    "+hbillObj.getAgencyname());
+            billtext.setText("Bill ID    :   "+hbillObj.getBillId()+"\nBill Date    :   "+hbillObj.getBillDate()+"\nBill Type  :   "+hbillObj.getBillType()+"\nAgency Name    :   "+hbillObj.getAgencyName()+"\nUnits Consumed   :    "+hbillObj.getUnitsConsumed()+"\nBill Amount   :    "+hbillObj.getAgencyName());
 
         }else if(billObj.getBillType().matches("MOBILE"))
         {
@@ -45,7 +45,7 @@ public class BillDisplay extends AppCompatActivity
 
             MobileBill mbillObj = (MobileBill) mIntent.getSerializableExtra("billOBJ");
 
-            billtext.setText("Bill ID    :   "+mbillObj.getBillId()+"\nBill Date    :   "+mbillObj.getBillDate()+"\nBill Type  :   "+mbillObj.getBillType()+"\nMobile No    :   "+mbillObj.getMobileNo()+"\nModel Name  :   "+mbillObj.getMobilemanufacturer()+"\nPlan Name  :   "+mbillObj.getPlanname()+"\nInternet Used   :   "+mbillObj.getInternetGBused()+"\nMinutes used    :   "+mbillObj.getMinutesused()+"\nBill Amount  :   "+mbillObj.getTotalBillAmount());
+            billtext.setText("Bill ID    :   "+mbillObj.getBillId()+"\nBill Date    :   "+mbillObj.getBillDate()+"\nBill Type  :   "+mbillObj.getBillType()+"\nMobile No    :   "+mbillObj.getMobileNo()+"\nModel Name  :   "+mbillObj.getMobileManufacturer()+"\nPlan Name  :   "+mbillObj.getPlanName()+"\nInternet Used   :   "+mbillObj.getInternetGBused()+"\nMinutes used    :   "+mbillObj.getMinutesUsed()+"\nBill Amount  :   "+mbillObj.getTotalBillAmount());
 
         }else if(billObj.getBillType().matches("INTERNET"))
         {
@@ -53,7 +53,7 @@ public class BillDisplay extends AppCompatActivity
 
             InternetBill ibillObj = (InternetBill) mIntent.getSerializableExtra("billOBJ");
 
-            billtext.setText("Bill ID    :   "+ibillObj.getBillId()+"\nBill Date    :   "+ibillObj.getBillDate()+"\nBill Type  :   "+ibillObj.getBillType()+"\nInternet Provider  :   "+ibillObj.getProvidername()+"\nInternet Used  :  "+ibillObj.getInternetGBused()+"\nBill Amount  :   "+ibillObj.getTotalBillAmount());
+            billtext.setText("Bill ID    :   "+ibillObj.getBillId()+"\nBill Date    :   "+ibillObj.getBillDate()+"\nBill Type  :   "+ibillObj.getBillType()+"\nInternet Provider  :   "+ibillObj.getProviderName()+"\nInternet Used  :  "+ibillObj.getInternetGBused()+"\nBill Amount  :   "+ibillObj.getTotalBillAmount());
 
         }else {
 

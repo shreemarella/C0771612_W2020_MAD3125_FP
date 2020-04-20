@@ -33,11 +33,11 @@ public class HydroBill extends Bill implements IDisplay
         double totalBillAmount = 0.0;
         if (unitsConsumed < 10)
         {
-            totalBillAmount = 1.5 * unitsConsumed;
+            totalBillAmount = 2.5 * unitsConsumed;
         }
         else
         {
-            totalBillAmount = 2 * unitsConsumed;
+            totalBillAmount = 3 * unitsConsumed;
         }
         return totalBillAmount;
     }

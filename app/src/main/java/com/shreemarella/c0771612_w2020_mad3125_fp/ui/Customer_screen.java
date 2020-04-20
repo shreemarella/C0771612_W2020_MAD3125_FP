@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
 import com.shreemarella.c0771612_w2020_mad3125_fp.customeradapter.billsadapter;
+import com.shreemarella.c0771612_w2020_mad3125_fp.repo.StringExtension;
 
 import java.util.ArrayList;
 
@@ -35,24 +36,30 @@ public class Customer_screen extends AppCompatActivity
         Email = findViewById(R.id.txtCustomerEmail);
         TotalAmountToPay = findViewById(R.id.txtCustomerTotalAmount);
         rvBills=findViewById(R.id.rvbills);
-
-        customer tobj = (customer) getIntent().getParcelableExtra("customers");
-
-        billsArray= tobj.getBills();
-
-        CustomerId.setText(tobj.getCustomerId());
-        FullName.setText(tobj.getFullName());
-        Email.setText(tobj.getEmailId());
         customersInfo();
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        customersInfo();
+
     }
 
     private void customersInfo()
     {
+        Intent mIntent = getIntent();
+        customer tobj = mIntent.getParcelableExtra("CustomerOBJ");
+        billsArray = tobj.getBills();
+
 
         Billsadapter= new billsadapter(this.billsArray);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvBills.setLayoutManager(mLayoutManager);
         rvBills.setAdapter((RecyclerView.Adapter) Billsadapter);
+        CustomerId.setText(tobj.getCustomerId());
+        FullName.setText(tobj.getFullName());
+        Email.setText(tobj.getEmailId());
+        TotalAmountToPay.setText(StringExtension.doubleFormatter(tobj.getTotalAmount()));
 
     }
 
@@ -65,27 +72,22 @@ public class Customer_screen extends AppCompatActivity
     }
 
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.menu3:
-//                Intent intent3 = new Intent(Customer_screen.this, newHydroBill.class);
-//                startActivity(intent3);
-//
-//                return true;
-//            case R.id.menu4:
-//
-//                Intent intent4 = new Intent(Customer_screen.this, newmobileBill.class);
-//                startActivity(intent4);
-//                return true;
-//            case R.id.menu5:
-//
-//                Intent intent5 = new Intent(Customer_screen.this, newInternetBill.class);
-//                startActivity(intent5);
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu3:
+                Intent mIntent = getIntent();
+                customer customerObj = mIntent.getParcelableExtra("CustomerOBJ");
+                Intent intent3 = new Intent(Customer_screen.this, addNewBill.class);
+                intent3.putExtra("CustomerOBJ",customerObj);
+                startActivity(intent3);
+
+                return true;
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }
