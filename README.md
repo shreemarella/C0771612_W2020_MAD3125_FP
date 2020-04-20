@@ -8,6 +8,7 @@
 * https://android.jlelse.eu/easily-adding-nested-recycler-view-in-android-a7e9f7f04047
 * https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example
 * https://www.vogella.com/tutorials/AndroidParcelable/article.html
+* https://stackoverflow.com/questions/36302764/when-is-adapter-null-in-recyclerview
 * https://javatpoint.com/android-option-menu-example
 * https://stackoverflow.com/questions/38060002/how-to-hide-show-textview-from-java
 
