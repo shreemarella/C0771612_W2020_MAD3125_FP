@@ -12,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
-        <activity android:name=".ui.BillDisplay"></activity>
-        <activity android:name=".ui.addNewBill" />
-        <activity android:name=".ui.customers_list" />
-        <activity android:name=".ui.Customer_screen" />
+        <activity android:name=".ui.addNewBill"></activity>
+        <activity android:name= ".ui.BillDisplay"/>
+        <activity android:name= ".ui.Customer_screen"/>
         <activity android:name=".ui.customers_details" />
+        <activity android:name=".ui.customers_list" />
         <activity android:name=".ui.LoginActivity" />
         <activity
             android:name=".ui.SplashActivity"
