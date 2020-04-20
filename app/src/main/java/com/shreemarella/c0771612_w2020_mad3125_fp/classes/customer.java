@@ -6,7 +6,6 @@ import android.os.Parcelable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class customer implements Parcelable
 {
@@ -80,14 +79,6 @@ public class customer implements Parcelable
         this.emailId = emailId;
     }
 
-    public Double getAllTotal() {
-        return allTotal;
-    }
-
-    public void setAllTotal(Double allTotal) {
-        this.allTotal = allTotal;
-    }
-
     public void addBill(String billId, Bill bill)
     {
         this.customerBills.put(billId, bill);
@@ -106,6 +97,15 @@ public class customer implements Parcelable
         ArrayList<Bill> billsList = new ArrayList<>(demoValues);
         return billsList;
     }
+
+    public Double getAllTotal() {
+        return allTotal;
+    }
+
+    public void setAllTotal(Double allTotal) {
+        this.allTotal = allTotal;
+    }
+
 
 
 
