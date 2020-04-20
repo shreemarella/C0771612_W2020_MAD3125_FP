@@ -16,7 +16,7 @@ public class StringExtension
 
     public static String doubleFormatter(Double d)
     {
-        return String.format(" $ " + "%,.2f", d);
+        return String.format("$" + "%,.2f", d);
     }
 
 
