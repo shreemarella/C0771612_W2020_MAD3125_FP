@@ -25,6 +25,7 @@ public class customers_list extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_customers_list);
         rvCustomerList=findViewById(R.id.rvcustomerlist);
 
         customersInfo();
@@ -49,7 +50,7 @@ public class customers_list extends AppCompatActivity
         rvCustomerList.setAdapter(customeradapter);
     }
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {         //https://javatpoint.com/android-option-menu-example
+    public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.newcustomer, menu);
         return true;

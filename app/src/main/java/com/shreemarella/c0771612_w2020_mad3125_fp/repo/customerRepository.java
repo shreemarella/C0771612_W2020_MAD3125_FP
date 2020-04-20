@@ -36,12 +36,12 @@ public class customerRepository
                 customer customer1 = new customer("C0001","Shree","Marella","Shree@gmail.com");
                 customer customer2 = new customer("C0002","Shreya","Vaghasia","Shreya@gmail.com");
                 customer customer3 = new customer("C0003","Gagandeep","Kaur","Gagn@gmail.com");
-                customer1.addBill("HYD",H1);
-                customer1.addBill("MOB",M1);
-                customer1.addBill("INT",I1);
-                customer2.addBill("HYD",H2);
-                customer2.addBill("INT",I2);
-                customer3.addBill("HYD",H3);
+                customer1.addBill(H1.getBillId(),H1);
+                customer1.addBill(M1.getBillId(),M1);
+                customer1.addBill(I1.getBillId(),I1);
+                customer2.addBill(H2.getBillId(),H2);
+                customer2.addBill(I2.getBillId(),I2);
+                customer3.addBill(H3.getBillId(),H3);
                 customers.add(customer1);
                 customers.add(customer2);
                 customers.add(customer3);

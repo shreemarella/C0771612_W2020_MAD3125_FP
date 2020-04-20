@@ -43,6 +43,7 @@ public class billsadapter extends RecyclerView.Adapter<billsadapter.ViewHolder>
         holder.txtCellBillDate.setText(mBills.getBillDate().toString());
         holder.txtCellBillType.setText(mBills.getBillType().toString());
 
+
     }
     @Override
     public int getItemCount()  {
