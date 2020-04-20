@@ -1,5 +1,13 @@
 # C0771612_W2020_MAD3125_FP
 ## Shree Marella - Utility Bills Register
+
+### Utility Bills Register
+* A bills register is created to show all the bills of particular customers 
+* New customers and bills can be added to the exsisting bills 
+* A login validation account is created for login the account
+* Total bill amount for all the bills is displayed in each customer record 
+
+** output word screenshots file is added **
 **References :**
 
 * https://uxdesign.cc/building-the-perfect-splash-screen-46e080395f06
