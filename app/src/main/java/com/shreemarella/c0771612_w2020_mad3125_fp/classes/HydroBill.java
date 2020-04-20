@@ -28,19 +28,19 @@ public class HydroBill extends Bill implements IDisplay
         this.totalBillAmount = billCalculate();
     }
 
-    @Override
-    public Double billCalculate(){
-        double totalBillAmount = 0.0;
-        if (unitsConsumed < 10)
-        {
-            totalBillAmount = 2.5 * unitsConsumed;
-        }
-        else
-        {
-            totalBillAmount = 3 * unitsConsumed;
-        }
-        return totalBillAmount;
-    }
+//    @Override
+//    public Double billCalculate(){
+//        double totalBillAmount = 0.0;
+//        if (unitsConsumed < 10)
+//        {
+//            totalBillAmount = 2.5 * unitsConsumed;
+//        }
+//        else
+//        {
+//            totalBillAmount = 3 * unitsConsumed;
+//        }
+//        return totalBillAmount;
+//    }
 
 
 
