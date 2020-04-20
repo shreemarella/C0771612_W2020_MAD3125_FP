@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 import com.shreemarella.c0771612_w2020_mad3125_fp.classes.Bill;
 import com.shreemarella.c0771612_w2020_mad3125_fp.classes.HydroBill;
+import com.shreemarella.c0771612_w2020_mad3125_fp.classes.InternetBill;
+import com.shreemarella.c0771612_w2020_mad3125_fp.classes.MobileBill;
 
 public class BillDisplay extends AppCompatActivity
 {
@@ -37,6 +39,25 @@ public class BillDisplay extends AppCompatActivity
 
             billtext.setText("Bill ID    :   "+hbillObj.getBillId()+"\nBill Date    :   "+hbillObj.getBillDate()+"\nBill Type  :   "+hbillObj.getBillType()+"\nAgency Name    :   "+hbillObj.getAgencyname()+"\nUnits Consumed   :    "+hbillObj.getUnitsconsumed()+"\nBill Amount   :    "+hbillObj.getAgencyname());
 
+        }else if(billObj.getBillType().matches("MOBILE"))
+        {
+            billimg.setImageResource(R.drawable.smartphone);
+
+            MobileBill mbillObj = (MobileBill) mIntent.getSerializableExtra("billOBJ");
+
+            billtext.setText("Bill ID    :   "+mbillObj.getBillId()+"\nBill Date    :   "+mbillObj.getBillDate()+"\nBill Type  :   "+mbillObj.getBillType()+"\nMobile No    :   "+mbillObj.getMobileNo()+"\nModel Name  :   "+mbillObj.getMobilemanufacturer()+"\nPlan Name  :   "+mbillObj.getPlanname()+"\nInternet Used   :   "+mbillObj.getInternetGBused()+"\nMinutes used    :   "+mbillObj.getMinutesused()+"\nBill Amount  :   "+mbillObj.getTotalBillAmount());
+
+        }else if(billObj.getBillType().matches("INTERNET"))
+        {
+            billimg.setImageResource(R.drawable.smarthouse);
+
+            InternetBill ibillObj = (InternetBill) mIntent.getSerializableExtra("billOBJ");
+
+            billtext.setText("Bill ID    :   "+ibillObj.getBillId()+"\nBill Date    :   "+ibillObj.getBillDate()+"\nBill Type  :   "+ibillObj.getBillType()+"\nInternet Provider  :   "+ibillObj.getProvidername()+"\nInternet Used  :  "+ibillObj.getInternetGBused()+"\nBill Amount  :   "+ibillObj.getTotalBillAmount());
+
+        }else {
+
+            billtext.setText("no bill found");
         }
 
 
