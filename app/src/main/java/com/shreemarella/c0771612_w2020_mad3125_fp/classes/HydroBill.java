@@ -25,7 +25,10 @@ public class HydroBill extends Bill implements IDisplay
         super(billId, billDate, billType, totalBillAmount);
         this.agencyName = agencyName;
         this.unitsConsumed = unitsConsumed;
+        this.totalBillAmount = billCalculate();
     }
+
+    @Override
     public Double billCalculate(){
         double totalBillAmount = 0.0;
         if (unitsConsumed < 10)
