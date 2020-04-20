@@ -4,7 +4,9 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,6 +17,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
+import com.shreemarella.c0771612_w2020_mad3125_fp.classes.HydroBill;
+import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -98,15 +102,110 @@ public class addNewBill extends AppCompatActivity implements  AdapterView.OnItem
             }
 
         });
+
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
+    {
+        ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+        ((TextView) parent.getChildAt(0)).setTextSize(18);
+        ((TextView) parent.getChildAt(0)).setTypeface(null, Typeface.BOLD);
+
+        if(position == 0)
+        {
+            initFields();
+            clearfields();
+            unitsUsed.setVisibility(View.INVISIBLE);
+            agencyName.setVisibility(View.INVISIBLE);
+            btnAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+        }
+        if(position == 1)
+        {
+            hidefields();
+            clearfields();
+            unitsUsed.setVisibility(View.VISIBLE);
+            agencyName.setVisibility(View.VISIBLE);
+            agencyName.setHint("ENTER AGENCY NAME");
+//            unitsUsed.setHint("ENTER UNITS USED");
+            btnAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent mIntent = getIntent();
+                    customer customerObj = mIntent.getParcelableExtra("CustomerOBJ");
+
+
+                    HydroBill tempHydro = new HydroBill(billID.getText().toString(),billDate.getText().toString(),"hydro",50.5,agencyName.getText().toString(),Integer.parseInt(unitsUsed.getText().toString()));
+
+                    customerObj.addBill("HYD1",tempHydro);
+                    startActivity(mIntent);
+                    finish();
+
+
+
+
+
+                }
+            });
+        }
+
+        if(position == 2)
+        {
+            hidefields();
+            clearfields();
+            dataused.setVisibility(View.VISIBLE);
+            agencyName.setVisibility(View.VISIBLE);
+            agencyName.setHint("ENTER PROVIDER NAME");
+//            unitsUsed.setHint("ENTER DATA USED");
+            btnAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+        }
 
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+    public void initFields()
+    {
+        minutesUsed.setVisibility(View.VISIBLE);
+        mobilenumber.setVisibility(View.VISIBLE);
+        dataused.setVisibility(View.VISIBLE);
+        minutesUsed.setVisibility(View.VISIBLE);
+        planName.setVisibility(View.VISIBLE);
+        manufacturerName.setVisibility(View.VISIBLE);
+    }
+    public void hidefields()
+    {
+        minutesUsed.setVisibility(View.INVISIBLE);
+        mobilenumber.setVisibility(View.INVISIBLE);
+        dataused.setVisibility(View.INVISIBLE);
+        minutesUsed.setVisibility(View.INVISIBLE);
+        planName.setVisibility(View.INVISIBLE);
+        manufacturerName.setVisibility(View.INVISIBLE);
+    }
+
+    public void clearfields()
+    {
+        mobilenumber.setText("");
+        dataused.setText("");
+        minutesUsed.setText("");
+        planName.setText("");
+        manufacturerName.setText("");
+        billDate.setText("");
+        billID.setText("");
+        agencyName.setText("");
+        dataused.setText("");
+        unitsUsed.setText("");
     }
 }
