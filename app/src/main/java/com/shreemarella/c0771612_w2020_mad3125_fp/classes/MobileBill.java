@@ -15,6 +15,7 @@ public class MobileBill extends Bill implements IDisplay
         this.mobileNo = mobileNo;
         this.internetGBused = internetGBused;
         this.minutesUsed = minutesUsed;
+        this.totalBillAmount = billCalculate();
     }
 
     public String getMobileManufacturer() {
@@ -55,6 +56,13 @@ public class MobileBill extends Bill implements IDisplay
 
     public void setMinutesUsed(int minutesUsed) {
         this.minutesUsed = minutesUsed;
+    }
+
+    @Override
+    public Double billCalculate(){
+        double totalBillAmount = 0.0;
+        totalBillAmount = (this.internetGBused ) * 25 + (this.minutesUsed) * 0.2;
+        return totalBillAmount;
     }
 
     @Override
