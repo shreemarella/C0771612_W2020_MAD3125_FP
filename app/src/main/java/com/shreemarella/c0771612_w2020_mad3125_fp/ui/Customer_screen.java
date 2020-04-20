@@ -48,11 +48,10 @@ public class Customer_screen extends AppCompatActivity
     private void customersInfo()
     {
         Intent mIntent = getIntent();
+
         customer tobj = mIntent.getParcelableExtra("CustomerOBJ");
         billsArray = tobj.getBills();
-
-
-        Billsadapter= new billsadapter(this.billsArray);
+        Billsadapter = new billsadapter(this.billsArray);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvBills.setLayoutManager(mLayoutManager);
         rvBills.setAdapter((RecyclerView.Adapter) Billsadapter);
@@ -60,7 +59,6 @@ public class Customer_screen extends AppCompatActivity
         FullName.setText(tobj.getFullName());
         Email.setText(tobj.getEmailId());
         TotalAmountToPay.setText(StringExtension.doubleFormatter(tobj.getTotalAmount()));
-
     }
 
     @Override
