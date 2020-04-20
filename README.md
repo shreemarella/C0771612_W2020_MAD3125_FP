@@ -9,6 +9,8 @@
 * https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example
 * https://www.vogella.com/tutorials/AndroidParcelable/article.html
 * https://javatpoint.com/android-option-menu-example
+* https://stackoverflow.com/questions/38060002/how-to-hide-show-textview-from-java
+
 
 
 
