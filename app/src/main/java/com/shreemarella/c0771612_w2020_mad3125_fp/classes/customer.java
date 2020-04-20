@@ -2,7 +2,6 @@ package com.shreemarella.c0771612_w2020_mad3125_fp.classes;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -25,8 +24,7 @@ public class customer implements Parcelable
     }
 
 
-    protected customer(Parcel in)
-    {
+    protected customer(Parcel in) {
         customerId = in.readString();
         firstName = in.readString();
         lastName = in.readString();
@@ -79,6 +77,8 @@ public class customer implements Parcelable
         this.emailId = emailId;
     }
 
+
+
     public void addBill(String billId, Bill bill)
     {
         this.customerBills.put(billId, bill);
@@ -91,13 +91,14 @@ public class customer implements Parcelable
     public void setCustomerBills(HashMap<String, Bill> customerBills) {
         this.customerBills = customerBills;
     }
+
+
     public ArrayList<Bill> getBills()
     {
         Collection<Bill> demoValues = customerBills.values();
         ArrayList<Bill> billsList = new ArrayList<>(demoValues);
         return billsList;
     }
-
     public Double getAllTotal() {
         return allTotal;
     }

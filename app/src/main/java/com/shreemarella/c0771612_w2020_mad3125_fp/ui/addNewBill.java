@@ -138,7 +138,7 @@ public class addNewBill extends AppCompatActivity implements  AdapterView.OnItem
 
                         Intent intent3 = new Intent(addNewBill.this, Customer_screen.class);
 
-                        intent3.putExtra("customers", customerObj);
+                        intent3.putExtra("CustomerOBJ", customerObj);
 
                         startActivity(intent3);
                     }else{
