@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5F35B"
     tools:context="com.shreemarella.c0771612_w2020_mad3125_fp.ui.Customer_screen">
 
     <androidx.core.widget.NestedScrollView
