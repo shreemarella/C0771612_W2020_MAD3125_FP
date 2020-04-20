@@ -13,6 +13,7 @@
 
 * https://uxdesign.cc/building-the-perfect-splash-screen-46e080395f06
 * https://developer.android.com/reference/java/util/HashMap
+* http://mandarshinde.com/convert-hashmap-arraylist/
 * https://abhiandroid.com/java/hashmap
 * https://android.jlelse.eu/easily-adding-nested-recycler-view-in-android-a7e9f7f04047
 * https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example
