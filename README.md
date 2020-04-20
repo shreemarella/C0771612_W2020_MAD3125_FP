@@ -7,7 +7,7 @@
 * A login validation account is created for login the account
 * Total bill amount for all the bills is displayed in each customer record 
 
-**output word screenshots file is attached**
+**output word screenshots document file is attached**
 
 **References :**
 
