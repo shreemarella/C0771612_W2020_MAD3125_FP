@@ -7,7 +7,8 @@
 * A login validation account is created for login the account
 * Total bill amount for all the bills is displayed in each customer record 
 
-** output word screenshots file is added **
+**output word screenshots file is attached**
+
 **References :**
 
 * https://uxdesign.cc/building-the-perfect-splash-screen-46e080395f06
