@@ -4,6 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E5F35B"
     tools:context=".ui.BillDisplay">
+
+    <ImageView
+        android:id="@+id/imgBilldisplay"
+        android:layout_width="194dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtbillDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtbillDisplay"
+        android:layout_width="348dp"
+        android:layout_height="347dp"
+        android:layout_marginBottom="72dp"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
