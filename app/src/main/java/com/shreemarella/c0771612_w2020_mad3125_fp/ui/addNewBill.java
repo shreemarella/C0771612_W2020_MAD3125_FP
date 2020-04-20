@@ -52,17 +52,17 @@ public class addNewBill extends AppCompatActivity implements  AdapterView.OnItem
         mActionBar.hide();
 
         btnAdd=findViewById(R.id.btnAdd);
-        billID=findViewById(R.id.BillIDTextInputEditText);
-        billDate = findViewById(R.id.BillDateTextInputEditText);
-        unitsUsed = findViewById(R.id.enterunitsusedInputEditText);
-        agencyName = findViewById(R.id.enteragencynameInputEditText);
-        minutesUsed = findViewById(R.id.enterminutesusedInputEditText);
-        manufacturerName = findViewById(R.id.entermanufacturernameInputEditText);
-        planName = findViewById(R.id.enteryourplannameInputEditText);
-        mobilenumber = findViewById(R.id.mobilenumberInputEditText);
-        dataused = findViewById(R.id.datausedInputEditText);
-        spbillType = findViewById(R.id.spinnertype);
-        billamount=findViewById(R.id.billAmountInputEditText);
+        billID=findViewById(R.id.BillDtxtipet);
+        billDate = findViewById(R.id.BillDatetxtipet);
+        unitsUsed = findViewById(R.id.enterunitsusedtxtipet);
+        agencyName = findViewById(R.id.enteragencynametxtipet);
+        minutesUsed = findViewById(R.id.enterminutesusedtxtipet);
+        manufacturerName = findViewById(R.id.entermanufacturernametxtipet);
+        planName = findViewById(R.id.enteryourplannametxtipet);
+        mobilenumber = findViewById(R.id.mobilenumbertxtipet);
+        dataused = findViewById(R.id.datausedtxtipet);
+        spbillType = findViewById(R.id.SpinnerType);
+        billamount=findViewById(R.id.billAmounttxtipet);
 
         ArrayList<String> billType = new ArrayList<>();
         billType.add("MOBILE");

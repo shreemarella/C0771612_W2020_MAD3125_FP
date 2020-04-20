@@ -14,7 +14,7 @@
 
 
         <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/spinnertype"
+            android:id="@+id/SpinnerType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -24,7 +24,7 @@
         </androidx.appcompat.widget.AppCompatSpinner>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/billIDTextInputLayout"
+            android:id="@+id/billDtxtipL"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,14 +33,14 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/BillIDTextInputEditText"
+                android:id="@+id/BillDtxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bill ID" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/billDateTextInputLayout"
+            android:id="@+id/billDatetxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -48,14 +48,14 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/BillDateTextInputEditText"
+                android:id="@+id/BillDatetxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bill Date" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/enterunitsusedTextInputLayout"
+            android:id="@+id/enterunitsusedtxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -63,7 +63,7 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enterunitsusedInputEditText"
+                android:id="@+id/enterunitsusedtxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter units Consumed" />
@@ -71,7 +71,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/enteragencynameTextInputLayout"
+            android:id="@+id/enteragencynametxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -79,13 +79,13 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enteragencynameInputEditText"
+                android:id="@+id/enteragencynametxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/mobilenumberTextInputLayout"
+            android:id="@+id/mobilenumbertxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -93,14 +93,14 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mobilenumberInputEditText"
+                android:id="@+id/mobilenumbertxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Mobile Number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/enterdatausedTextInputLayout"
+            android:id="@+id/enterdatausedtxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -108,7 +108,7 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/datausedInputEditText"
+                android:id="@+id/datausedtxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Data Used" />
@@ -116,7 +116,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/enterminutesUsedTextInputLayout"
+            android:id="@+id/enterminutesUsedtxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -124,14 +124,14 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enterminutesusedInputEditText"
+                android:id="@+id/enterminutesusedtxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Minutes Used" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/entermanufacturernameTextInputLayout"
+            android:id="@+id/entermanufacturernametxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -139,14 +139,14 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/entermanufacturernameInputEditText"
+                android:id="@+id/entermanufacturernametxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Manufacturer Name" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/enteryourplannameTextInputLayout"
+            android:id="@+id/enteryourplannametxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -154,14 +154,14 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enteryourplannameInputEditText"
+                android:id="@+id/enteryourplannametxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Your Plan Name" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/billAmountTextInputLayout"
+            android:id="@+id/billAmounttxtipL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -169,7 +169,7 @@
             android:layout_marginEnd="32dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/billAmountInputEditText"
+                android:id="@+id/billAmounttxtipet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Bill Amount" />
@@ -184,7 +184,7 @@
             android:text="Add Bill"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/billAmountTextInputLayout"  />
+            app:layout_constraintTop_toBottomOf="@+id/billAmounttxtipL"  />
 
 
 <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->

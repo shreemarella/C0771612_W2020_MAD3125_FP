@@ -8,7 +8,7 @@
     tools:context="com.shreemarella.c0771612_w2020_mad3125_fp.ui.customers_details">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/customerIDTextInputLayout"
+        android:id="@+id/CIDtxtipL"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/customerIDTextInputEditText"
+            android:id="@+id/CIDtxtipet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Customer ID"
@@ -28,7 +28,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/firstNameTextInputLayout"
+        android:id="@+id/FNtxtipL"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,10 +37,10 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/customerIDTextInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/CIDtxtipL">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/firstNameTextInputEditText"
+            android:id="@+id/FNtxtipet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="First Name"
@@ -48,7 +48,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/lastNameTextInputLayout"
+        android:id="@+id/LNtxtipL"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,10 +57,10 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstNameTextInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/FNtxtipL">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/lastNameTextInputEditText"
+            android:id="@+id/LNtxtipet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Last Name"
@@ -68,7 +68,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/customerEmailTextInputLayout"
+        android:id="@+id/CEmailtxtipL"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,10 +77,10 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastNameTextInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/LNtxtipL">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/customerEmailTextInputEditText"
+            android:id="@+id/Emailtxtipet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -88,7 +88,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/customerbutton"
+        android:id="@+id/CButton"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/customerEmailTextInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/CEmailtxtipL" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

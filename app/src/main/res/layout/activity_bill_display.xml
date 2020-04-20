@@ -8,20 +8,22 @@
     tools:context=".ui.BillDisplay">
 
     <ImageView
-        android:id="@+id/imgBilldisplay"
+        android:id="@+id/imgBDisplay"
         android:layout_width="194dp"
         android:layout_height="194dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtbillDisplay"
+        app:layout_constraintBottom_toTopOf="@+id/txtBDisplay"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
         tools:src="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/txtbillDisplay"
+        android:id="@+id/txtBDisplay"
         android:layout_width="348dp"
         android:layout_height="347dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="44dp"
         android:text="TextView"
         android:textAllCaps="false"
         android:textColor="@color/design_default_color_on_secondary"

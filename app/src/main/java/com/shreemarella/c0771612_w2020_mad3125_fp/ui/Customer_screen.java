@@ -31,10 +31,10 @@ public class Customer_screen extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_screen);
-        CustomerId = findViewById(R.id.txtCustomerId);
-        FullName = findViewById(R.id.txtCustomerName);
-        Email = findViewById(R.id.txtCustomerEmail);
-        TotalAmountToPay = findViewById(R.id.txtCustomerTotalAmount);
+        CustomerId = findViewById(R.id.txtCId);
+        FullName = findViewById(R.id.txtCName);
+        Email = findViewById(R.id.txtCEmail);
+        TotalAmountToPay = findViewById(R.id.txtCTAmount);
         rvBills=findViewById(R.id.rvbills);
         customersInfo();
     }
@@ -73,7 +73,7 @@ public class Customer_screen extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu3:
+            case R.id.menuAddBill:
                 Intent mIntent = getIntent();
                 customer customerObj = mIntent.getParcelableExtra("CustomerOBJ");
                 Intent intent3 = new Intent(Customer_screen.this, addNewBill.class);

@@ -6,7 +6,7 @@
     android:background="#E5F35B">
 
     <TextView
-        android:id="@+id/image_name"
+        android:id="@+id/imgName"
         style="@style/Base.Widget.MaterialComponents.TextView"
         android:layout_width="411dp"
         android:layout_height="59dp"

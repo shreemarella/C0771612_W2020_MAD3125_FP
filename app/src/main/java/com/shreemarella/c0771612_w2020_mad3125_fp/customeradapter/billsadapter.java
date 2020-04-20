@@ -73,10 +73,10 @@ public class billsadapter extends RecyclerView.Adapter<billsadapter.ViewHolder>
         TextView txtCellBillAmount;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txtCellBillId = itemView.findViewById(R.id.lblCellId);
-            txtCellBillDate = itemView.findViewById(R.id.txtCellBillDate);
-            txtCellBillType = itemView.findViewById(R.id.txtCellBillType);
-            txtCellBillAmount = itemView.findViewById(R.id.txtCellBillAmount);
+            txtCellBillId = itemView.findViewById(R.id.lblCId);
+            txtCellBillDate = itemView.findViewById(R.id.txtCBD);
+            txtCellBillType = itemView.findViewById(R.id.txtCBT);
+            txtCellBillAmount = itemView.findViewById(R.id.txtCBA);
 
         }
 

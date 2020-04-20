@@ -52,7 +52,7 @@
                         </com.google.android.material.textview.MaterialTextView>
 
                         <com.google.android.material.textview.MaterialTextView
-                            android:id="@+id/txtCustomerId"
+                            android:id="@+id/txtCId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -90,7 +90,7 @@
                         </com.google.android.material.textview.MaterialTextView>
 
                         <com.google.android.material.textview.MaterialTextView
-                            android:id="@+id/txtCustomerName"
+                            android:id="@+id/txtCName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -128,7 +128,7 @@
                         </com.google.android.material.textview.MaterialTextView>
 
                         <com.google.android.material.textview.MaterialTextView
-                            android:id="@+id/txtCustomerEmail"
+                            android:id="@+id/txtCEmail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -166,7 +166,7 @@
                         </com.google.android.material.textview.MaterialTextView>
 
                         <com.google.android.material.textview.MaterialTextView
-                            android:id="@+id/txtCustomerTotalAmount"
+                            android:id="@+id/txtCTAmount"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -175,6 +175,7 @@
                             android:layout_weight="1"
                             android:background="#DFA857"
                             android:hint="Customer TotalAmount"
+                            android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="18sp">
 

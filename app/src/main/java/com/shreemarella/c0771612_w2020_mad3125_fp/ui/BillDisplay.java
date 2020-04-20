@@ -2,7 +2,6 @@ package com.shreemarella.c0771612_w2020_mad3125_fp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -25,8 +24,8 @@ public class BillDisplay extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bill_display);
 
-        billtext = findViewById(R.id.txtbillDisplay);
-        billimg = findViewById(R.id.imgBilldisplay);
+        billtext = findViewById(R.id.txtBDisplay);
+        billimg = findViewById(R.id.imgBDisplay);
 
         Intent mIntent = getIntent();
         Bill billObj = (Bill) mIntent.getSerializableExtra("billOBJ");

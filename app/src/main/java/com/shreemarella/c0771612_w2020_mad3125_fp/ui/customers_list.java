@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import com.shreemarella.c0771612_w2020_mad3125_fp.R;
 import com.shreemarella.c0771612_w2020_mad3125_fp.classes.customer;
 import com.shreemarella.c0771612_w2020_mad3125_fp.customeradapter.customeradapter;
-import com.shreemarella.c0771612_w2020_mad3125_fp.repo.customerRepository;
 
 import java.util.ArrayList;
 
@@ -26,7 +25,7 @@ public class customers_list extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customers_list);
-        rvCustomerList=findViewById(R.id.rvcustomerlist);
+        rvCustomerList=findViewById(R.id.rvClist);
 
         customersInfo();
     }
@@ -59,12 +58,12 @@ public class customers_list extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.menu1:
+            case R.id.menuAddNCustomer:
                 Intent intent2 = new Intent(customers_list.this, customers_details.class);
                 startActivity(intent2);
 
                 return true;
-            case R.id.menu2:
+            case R.id.menuLogout:
 
                 Intent intent = new Intent(customers_list.this, LoginActivity.class);
                 startActivity(intent);

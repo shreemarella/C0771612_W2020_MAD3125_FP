@@ -51,7 +51,7 @@ public class customeradapter extends RecyclerView.Adapter<customeradapter.custom
         public customerviewholder(@NonNull View itemView) {
             super(itemView);
 
-            txtCustomerName = itemView.findViewById(R.id.image_name);
+            txtCustomerName = itemView.findViewById(R.id.imgName);
         }
     }
 }

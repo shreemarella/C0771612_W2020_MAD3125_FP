@@ -25,11 +25,11 @@ public class customers_details extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customers_details);
-        edtCustomerID=findViewById(R.id.customerIDTextInputEditText);
-        edtFirstName=findViewById(R.id.firstNameTextInputEditText);
-        edtLastName=findViewById(R.id.lastNameTextInputEditText);
-        edtCEmail=findViewById(R.id.customerEmailTextInputEditText);
-        CAdd=findViewById(R.id.customerbutton);
+        edtCustomerID=findViewById(R.id.CIDtxtipet);
+        edtFirstName=findViewById(R.id.FNtxtipet);
+        edtLastName=findViewById(R.id.LNtxtipet);
+        edtCEmail=findViewById(R.id.Emailtxtipet);
+        CAdd=findViewById(R.id.CButton);
 
         CAdd.setOnClickListener(new View.OnClickListener() {
             @Override

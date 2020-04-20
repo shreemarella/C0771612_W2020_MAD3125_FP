@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu1"
+        android:id="@+id/menuAddNCustomer"
         android:title="Add New Customer" />
     <item
-        android:id="@+id/menu2"
+        android:id="@+id/menuLogout"
         android:title="Logout" />
 
 </menu>
